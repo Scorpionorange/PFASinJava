@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         btnOK = (Button) findViewById(R.id.btnFAOK);
         tvOutput = (TextView) findViewById(R.id.tvFAOutput);
         btnOK.setOnClickListener(new OnClickListener(){
-
             @Override
             //当按钮按下后：
             public void onClick(View v) {

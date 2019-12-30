@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvFAInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/etFAInput"
+        android:layout_centerVertical="true"
         android:text="@string/tvFAInput" />
 
     <EditText
         android:id="@+id/etFAInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:autofillHints="@string/etFAInput_autofillhint"
         android:ems="10"
         android:hint="@string/etFAInput_hint"
@@ -25,18 +29,26 @@
         android:id="@+id/tvFAClickHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/etFAInput"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:text="@string/tvFAClickHint" />
 
     <Button
         android:id="@+id/btnFAOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/tvFAClickHint"
+        android:layout_centerHorizontal="true"
         android:text="@string/btnFAOK" />
 
     <TextView
         android:id="@+id/tvFAOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/etFAInput"
+        android:layout_centerHorizontal="true"
+        android:textSize="75sp"
         android:text="@string/tvFAOutput" />
 
 </RelativeLayout>
